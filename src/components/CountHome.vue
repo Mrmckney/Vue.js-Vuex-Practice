@@ -25,12 +25,12 @@ export default {
     name: 'CountHome',
     computed: {
         colorCode: {
-        get() {
-            return this.$store.state.colorCode
-        },
-        set(newColor) {
-            this.$store.dispatch('setColorCode', newColor)
-        }
+            get() {
+                return this.$store.state.colorCode
+            },
+            set(newColor) {
+                this.$store.dispatch('setColorCode', newColor)
+            }
         }
     }
 }

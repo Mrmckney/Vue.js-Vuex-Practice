@@ -5,7 +5,6 @@
     <button @click="subCount">-</button>
 </template>
 
-
 <script>
 export default {
     name: 'CountAbout',
