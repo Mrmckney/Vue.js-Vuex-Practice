@@ -1,10 +1,22 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link v-if="isVisable === false" @click="isVisable = !isVisable" to="/">Proceed to Home</router-link>
+    <router-link v-if="isVisable === true" @click="isVisable = !isVisable" to="/about">Proceed to About</router-link>
   </div>
-  <router-view/>
+  <router-view />
 </template>
+
+<script>
+export default {
+  name: 'App',
+  data() {
+    return {
+      isVisable: false
+    }
+  }
+}
+
+</script>
 
 <style>
 #app {
@@ -26,5 +38,9 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+a {
+  text-decoration: none;
 }
 </style>
