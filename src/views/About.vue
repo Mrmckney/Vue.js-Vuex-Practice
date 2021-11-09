@@ -1,15 +1,15 @@
 <template>
     <h1>About Page</h1>
-    <Count />
+    <CountAbout />
 </template>
 
 <script>
-import Count from '../components/Count.vue'
+import CountAbout from '../components/CountAbout.vue'
 
 export default {
     name: 'About',
     components: {
-        Count
+        CountAbout
     }
 }
 </script>
