@@ -37,7 +37,7 @@ export default {
         set(newColor) {
           this.$store.dispatch('setColorCode', newColor)
         }
-        }
+      }
     }
 }
 </script>
